@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)http://www.runoob.com/angularjs/angularjs-tutorial.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="wsscat">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+		<meta property="qc:admins" content="465267610762567726375">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>AngularJS 教程 | 菜鸟教程</title>
+
+		<link rel="dns-prefetch" href="http://s.w.org/">
+		<link rel="canonical" href="http://www.runoob.com/angularjs/angularjs-tutorial.html">
+		<meta name="keywords" content="AngularJS 教程,Angular,AngularJS">
+		<meta name="description" content="AngularJS 教程     AngularJS 通过新的属性和表达式扩展了 HTML。 	AngularJS 可以构建一个单一页面应用程序（SPAs：Single Page Applications）。 	AngularJS 学习起来非常简单。 	现在开始学习 AngularJS！    每个章节都有相应的实例 在每个章节中，您可以在线编辑实例，然后点击按钮查看结果。  AngularJS 实例  &amp;lt;!DOCTYPE..">
+
+		<link rel="shortcut icon" href="http://www.runoob.com/favicon.ico" mce_href="http://www.runoob.com/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="./AngularJS 教程 _ 菜鸟教程_files/style.css" type="text/css" media="all">
+		<link rel="stylesheet" href="./AngularJS 教程 _ 菜鸟教程_files/font-awesome.min.css" media="all">
+		<script src="./AngularJS 教程 _ 菜鸟教程_files/ca-pub-5751451760833794.js.下载"></script>
+		<script src="./AngularJS 教程 _ 菜鸟教程_files/push.js.下载"></script>
+		<script src="./AngularJS 教程 _ 菜鸟教程_files/hm.js.下载"></script>
+		<script src="./AngularJS 教程 _ 菜鸟教程_files/jquery.min.js.下载"></script>
+		<script src="js/angular.js"></script>
+		<script src="js/angular-route.js"></script>
+		<script src="base.js"></script>
+		<!--[if lt IE 9]>
+     <script src="http://cdn.static.runoob.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+  <![endif]-->
+		<link rel="apple-touch-icon" href="http://static.runoob.com/images/icon/mobile-icon.png">
+		<meta name="apple-mobile-web-app-title" content="菜鸟教程">
+		<link rel="stylesheet" type="text/css" href="./AngularJS 教程 _ 菜鸟教程_files/prettify.css">
+	</head>
+
+	<body ng-controller="index2Ctrl">
+		<!--  头部 -->
+		<xheader></xheader>
+		<!-- 导航栏 -->
+		<!-- 导航栏 -->
+		<xnav></xnav>
+		<!--<xnav></xnav>-->
+		<!--  内容  -->
+		<div class="container main">
+			<!-- 中间 -->
+			<div class="row">
+
+				<div class="col left-column">
+					<div class="tab">AngularJS 教程</div>
+					<div class="sidebar-box gallery-list">
+						<div class="design" id="leftcolumn">
+							<a target="_top" title="AngularJS 教程" href="http://www.runoob.com/angularjs/angularjs-tutorial.html" style="background-color: rgb(150, 185, 125); font-weight: bold; color: rgb(255, 255, 255);">
+								AngularJS 教程 </a>
+							<a target="_top" title="AngularJS 简介" href="http://www.runoob.com/angularjs/angularjs-intro.html">
+								AngularJS 简介 </a>
+							<a target="_top" title="AngularJS 表达式" href="http://www.runoob.com/angularjs/angularjs-expressions.html">
+								AngularJS 表达式 </a>
+							<a target="_top" title="AngularJS 指令" href="http://www.runoob.com/angularjs/angularjs-directives.html">
+								AngularJS 指令 </a>
+							<a target="_top" title="AngularJS 模型" href="http://www.runoob.com/angularjs/angularjs-model.html"> AngularJS 模型</a>
+							<a target="_top" title="AngularJS Scope(作用域)" href="http://www.runoob.com/angularjs/angularjs-scopes.html"> AngularJS Scope(作用域)</a>
+							<a target="_top" title="AngularJS 控制器" href="http://www.runoob.com/angularjs/angularjs-controllers.html">
+								AngularJS 控制器 </a>
+							<a target="_top" title="AngularJS 过滤器" href="http://www.runoob.com/angularjs/angularjs-filters.html">
+								AngularJS 过滤器 </a>
+							<a target="_top" title="AngularJS Service" href="http://www.runoob.com/angularjs/angularjs-services.html"> AngularJS Service </a>
+							<a target="_top" title="AngularJS Http" href="http://www.runoob.com/angularjs/angularjs-http.html"> AngularJS Http </a>
+							<a target="_top" title="AngularJS Select" href="http://www.runoob.com/angularjs/angularjs-select.html"> AngularJS Select</a>
+							<a target="_top" title="AngularJS 表格" href="http://www.runoob.com/angularjs/angularjs-tables.html"> AngularJS 表格 </a>
+							<a target="_top" title="AngularJS SQL" href="http://www.runoob.com/angularjs/angularjs-sql.html"> AngularJS SQL </a>
+							<a target="_top" title="AngularJS HTML DOM" href="http://www.runoob.com/angularjs/angularjs-html-dom.html">
+								AngularJS HTML DOM </a>
+							<a target="_top" title="AngularJS 事件" href="http://www.runoob.com/angularjs/angularjs-html-events.html">
+								AngularJS 事件 </a>
+							<a target="_top" title="AngularJS 模块" href="http://www.runoob.com/angularjs/angularjs-modules.html">
+								AngularJS 模块 </a>
+							<a target="_top" title="AngularJS 表单" href="http://www.runoob.com/angularjs/angularjs-forms.html"> AngularJS 表单 </a>
+							<a target="_top" title="AngularJS 输入验证" href="http://www.runoob.com/angularjs/angularjs-validation.html"> AngularJS 输入验证 </a>
+							<a target="_top" title="AngularJS API" href="http://www.runoob.com/angularjs/angularjs-api.html"> AngularJS API </a>
+							<a target="_top" title="AngularJS Bootstrap" href="http://www.runoob.com/angularjs/angularjs-bootstrap.html"> AngularJS Bootstrap </a>
+							<a target="_top" title="AngularJS 包含" href="http://www.runoob.com/angularjs/angularjs-include.html"> AngularJS 包含</a>
+							<a target="_top" title="AngularJS 动画" href="http://www.runoob.com/angularjs/angularjs-animations.html">AngularJS 动画</a>
+							<a target="_top" title="AngularJS 依赖注入" href="http://www.runoob.com/angularjs/angularjs-dependency-injection.html">AngularJS 依赖注入</a>
+							<a target="_top" title="AngularJS 路由" href="http://www.runoob.com/angularjs/angularjs-routing.html">AngularJS 路由</a>
+							<a target="_top" title="AngularJS 应用" href="http://www.runoob.com/angularjs/angularjs-application.html">
+								AngularJS 应用 </a>
+							<br>
+							<h2 class="left">AngularJS <span class="left_h2">实例</span></h2>
+							<a target="_top" title="AngularJS 实例" href="http://www.runoob.com/angularjs/angularjs-examples.html">
+								AngularJS 实例 </a>
+							<br>
+							<h2 class="left">AngularJS <span class="left_h2">参考手册</span></h2>
+							<a target="_top" title="AngularJS 参考手册" href="http://www.runoob.com/angularjs/angularjs-reference.html">
+								AngularJS 参考手册 </a>
+
+						</div>
+					</div>
+				</div>
+				<div class="col middle-column">
+
+					<div class="article">
+						<div class="article-heading-ad">
+							<script async="" src="./AngularJS 教程 _ 菜鸟教程_files/adsbygoogle.js.下载"></script>
+							<!-- 移动版 自动调整 -->
+							<ins class="adsbygoogle" style="display:inline-block;min-width:300px;max-width:970px;width:100%;height:90px" data-ad-client="ca-pub-5751451760833794" data-ad-slot="1691338467" data-ad-format="horizontal" data-adsbygoogle-status="done"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:742px;background-color:transparent"><ins id="aswift_0_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:742px;background-color:transparent"><iframe width="742" height="90" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;" src="./AngularJS 教程 _ 菜鸟教程_files/saved_resource.html"></iframe></ins></ins>
+							</ins>
+							<script>
+								(adsbygoogle = window.adsbygoogle || []).push({});
+							</script>
+						</div>
+						<div class="previous-next-links">
+							<div class="previous-design-link" style="display: none;"> </div>
+							<div class="next-design-link">
+								<a href="http://www.runoob.com/angularjs/angularjs-intro.html" rel="next" title="AngularJS 简介">AngularJS 简介</a> →</div>
+						</div>
+						<div class="article-body">
+
+							<div class="article-intro" id="content">
+
+								<h1>AngularJS <span class="color_h1">教程</span>
+</h1>
+								<br>
+								<div class="tutintro">
+									<img src="./AngularJS 教程 _ 菜鸟教程_files/angular.jpg" alt="Angular" style="height:132px;width:132px">
+									<p>AngularJS 通过新的属性和表达式扩展了 HTML。</p>
+									<p>AngularJS 可以构建一个单一页面应用程序（SPAs：Single Page Applications）。</p>
+									<p>AngularJS 学习起来非常简单。</p>
+									<p><strong><a href="http://www.runoob.com/angularjs/angularjs-intro.html">现在开始学习 AngularJS！</a></strong></p>
+								</div>
+								<hr>
+
+								<h2>每个章节都有相应的实例</h2>
+								<p>在每个章节中，您可以在线编辑实例，然后点击按钮查看结果。</p>
+								<div class="example">
+									<h2 class="example">AngularJS 实例</h2>
+									<div class="example_code htmlHigh">
+										<span class="highLT">&lt;</span><span class="highELE">!DOCTYPE</span> <span class="highATT">html</span><span class="highGT">&gt;</span><br>
+										<span class="highLT">&lt;</span><span class="highELE">html</span><span class="highGT">&gt;</span><br>
+										<span class="highLT">&lt;</span><span class="highELE">head</span><span class="highGT">&gt;</span><br>
+										<span class="highLT">&lt;</span><span class="highELE">meta</span> <span class="highATT">charset</span>=<span class="highVAL">"utf-8"</span><span class="highGT">&gt;</span><br>
+										<span class="highLT">&lt;</span><span class="highELE">script</span> <span class="highATT">src=</span><span class="highVAL">"http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"</span><span class="highGT">&gt;</span><span class="highLT">&lt;</span><span class="highELE">/script</span><span class="highGT">&gt;</span><br>
+										<span class="highLT">&lt;</span><span class="highELE">/head</span><span class="highGT">&gt;</span><br>
+										<span class="highLT">&lt;</span><span class="highELE">body</span><span class="highGT">&gt;</span><br><br>
+										<span class="highLT">&lt;</span><span class="highELE">div</span> <span class="highATT">ng-app=</span><span class="highVAL">""</span><span class="highGT">&gt;</span><br> &nbsp; <span class="highLT">&lt;</span><span class="highELE">p</span><span class="highGT">&gt;</span>名字 : <span class="highLT">&lt;</span><span class="highELE">input</span> <span class="highATT">type=</span><span class="highVAL">"text"</span> <span class="highATT">ng-model=</span><span class="highVAL">"name"</span><span class="highGT">&gt;</span><span class="highLT">&lt;</span><span class="highELE">/p</span><span class="highGT">&gt;</span><br> &nbsp; <span class="highLT">&lt;</span><span class="highELE">h1</span><span class="highGT">&gt;</span>Hello <span class="highATT">{{name}}</span><span class="highLT">&lt;</span><span class="highELE">/h1</span><span class="highGT">&gt;</span><br>
+										<span class="highLT">&lt;</span><span class="highELE">/div</span><span class="highGT">&gt;</span><br><br>
+										<span class="highLT">&lt;</span><span class="highELE">/body</span><span class="highGT">&gt;</span><br>
+										<span class="highLT">&lt;</span><span class="highELE">/html</span><span class="highGT">&gt;</span>
+									</div><br>
+									<a class="tryitbtn" href="http://www.runoob.com/try/try.php?filename=try_ng_intro" target="_blank">尝试一下 »</a>
+								</div>
+								<br>
+								<hr>
+
+								<h2>阅读本教程前，您需要了解的知识：</h2>
+								<p>在开始学习 AngularJS 之前，您需要具备以下基础知识：</p>
+								<ul>
+									<li>HTML</li>
+									<li>CSS</li>
+									<li>JavaScript</li>
+								</ul>
+								<hr>
+
+								<h2>AngularJS 历史</h2>
+								<p>AngularJS 是比较新的技术，版本 1.0 是在 2012 年发布的。</p>
+								<p>AngularJS 是由 Google 的员工 Miško Hevery 从 2009 年开始着手开发。</p>
+								<p>这是一个非常好的构想，该项目目前已由 Google 正式支持，有一个全职的开发团队继续开发和维护这个库。</p>
+								<hr>
+
+								<h2>AngularJS 实例</h2>
+								<p>本教程包含了大量的 AngularJS 实例！</p>
+								<p>
+									<a href="http://www.runoob.com/angularjs/angularjs-examples.html">AngularJS 实例</a>
+								</p>
+								<hr>
+
+								<h2>AngularJS 参考手册</h2>
+								<p>参考手册包含了本教程中使用到的所有指令和过滤器。</p>
+								<p>
+									<a href="http://www.runoob.com/angularjs/angularjs-reference.html">AngularJS 参考手册</a>
+								</p>
+								<br><br>
+
+							</div>
+						</div>
+
+						<div class="previous-next-links">
+							<div class="previous-design-link" style="display: none;"> </div>
+							<div class="next-design-link">
+								<a href="http://www.runoob.com/angularjs/angularjs-intro.html" rel="next" title="AngularJS 简介">AngularJS 简介</a> →</div>
+						</div>
+
+						<div class="sidebar-box ad-box ad-box-large">
+							<div class="ad-336280" style="display: none;">
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<!-- 右边栏 -->
+				<div class="fivecol last right-column">
+					<!--
+	<div class="tab tab-light-blue" style="text-align: center;">关注微信</div>
+	<div class="sidebar-box">
+		<a href="http://m.runoob.com/" target="_blank"> <img src="http://www.runoob.com/wp-content/themes/w3cschool.cc/assets/img/qrcode.jpg" alt="移动版"> </a>
+		<div class="qqinfo">
+		 <a target="_blank" href="http://jq.qq.com/?_wv=1027&k=dOwwKN" id="qqhref">
+		<img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="菜鸟家族" title="菜鸟家族"></a>
+		<span>(群号：<span id="qqid">365967760</span>)</span>
+		</div>
+		
+	</div>
+	-->
+
+					<div class="sidebar-box ad-box ad-box-large">
+						<div class="sidebar-box advertise-here" style="margin: 0 auto;">
+							<a href="javascript:void(0);" style="font-size: 16px; color:#64854c;font-weight:bold;">分类导航</a>
+						</div>
+						<div class="sidebar-box sidebar-cate">
+
+							<div class="sidebar-tree">
+								<ul>
+									<li style="margin: 0;">
+										<a href="javascript:void(0);" class="tit">HTML / CSS</a>
+										<ul>
+											<li>
+												<a title="HTML 教程" href="http://www.runoob.com/html/html-tutorial.html">HTML 教程</a>
+											</li>
+											<li>
+												<a title="HTML5 教程" href="http://www.runoob.com/html/html5-intro.html">HTML5 教程</a>
+											</li>
+											<li>
+												<a title="CSS 教程" href="http://www.runoob.com/css/css-tutorial.html">CSS 教程</a>
+											</li>
+											<li>
+												<a title="CSS3 教程" href="http://www.runoob.com/css3/css3-tutorial.html">CSS3 教程</a>
+											</li>
+											<li>
+												<a title="Bootstrap 教程" href="http://www.runoob.com/bootstrap/bootstrap-tutorial.html">Bootstrap 教程</a>
+											</li>
+											<li>
+												<a title="Foundation 教程" href="http://www.runoob.com/foundation/foundation-tutorial.html">Foundation 教程</a>
+											</li>
+										</ul>
+									</li>
+									<li style="margin: 0;">
+										<a href="javascript:void(0);" class="tit">JavaScript</a>
+										<ul>
+											<li>
+												<a title="JavaScript 教程" href="http://www.runoob.com/js/js-tutorial.html">JavaScript 教程</a>
+											</li>
+											<li>
+												<a title="HTML DOM 教程" href="http://www.runoob.com/htmldom/htmldom-tutorial.html">HTML DOM 教程</a>
+											</li>
+											<li>
+												<a title="jQuery 教程" href="http://www.runoob.com/jquery/jquery-tutorial.html">jQuery 教程</a>
+											</li>
+											<li>
+												<a title="AngularJS 教程" href="http://www.runoob.com/angularjs/angularjs-tutorial.html">AngularJS 教程</a>
+											</li>
+											<li>
+												<a title="React 教程" href="http://www.runoob.com/react/react-tutorial.html">React 教程</a>
+											</li>
+											<li>
+												<a title="jQuery UI 教程" href="http://www.runoob.com/jqueryui/jqueryui-tutorial.html">jQuery UI 教程</a>
+											</li>
+											<li>
+												<a title="jQuery EasyUI 教程" href="http://www.runoob.com/jeasyui/jqueryeasyui-tutorial.html">jQuery EasyUI 教程</a>
+											</li>
+											<li>
+												<a title="Node.js 教程" href="http://www.runoob.com/nodejs/nodejs-tutorial.html">Node.js 教程</a>
+											</li>
+											<li>
+												<a title="AJAX 教程" href="http://www.runoob.com/ajax/ajax-tutorial.html">AJAX 教程</a>
+											</li>
+											<li>
+												<a title="JSON 教程" href="http://www.runoob.com/json/json-tutorial.html">JSON 教程</a>
+											</li>
+											<li>
+												<a title="Highcharts 教程" href="http://www.runoob.com/highcharts/highcharts-tutorial.html">Highcharts 教程</a>
+											</li>
+											<li>
+												<a title="Google 地图 教程" href="http://www.runoob.com/googleapi/google-maps-basic.html">Google 地图 教程</a>
+											</li>
+										</ul>
+									</li>
+									<li style="margin: 0;">
+										<a href="javascript:void(0);" class="tit">服务端</a>
+										<ul>
+											<li>
+												<a title="PHP 教程" href="http://www.runoob.com/php/php-tutorial.html">PHP 教程</a>
+											</li>
+											<li>
+												<a title="Python 教程" href="http://www.runoob.com/python/python-tutorial.html">Python 教程</a>
+											</li>
+											<li>
+												<a title="Python3 教程" href="http://www.runoob.com/python3/python3-tutorial.html">Python3 教程</a>
+											</li>
+											<li>
+												<a title="Django 教程" href="http://www.runoob.com/django/django-tutorial.html">Django 教程</a>
+											</li>
+											<li>
+												<a title="Linux 教程" href="http://www.runoob.com/linux/linux-tutorial.html">Linux 教程</a>
+											</li>
+											<li>
+												<a title="Docker 教程" href="http://www.runoob.com/docker/docker-tutorial.html">Docker 教程</a>
+											</li>
+											<li>
+												<a title="Ruby 教程" href="http://www.runoob.com/ruby/ruby-tutorial.html">Ruby 教程</a>
+											</li>
+											<li>
+												<a title="Java 教程" href="http://www.runoob.com/java/java-tutorial.html">Java 教程</a>
+											</li>
+											<li>
+												<a title="C 教程" href="http://www.runoob.com/c/c-tutorial.html">C 教程</a>
+											</li>
+											<li>
+												<a title="C++ 教程" href="http://www.runoob.com/cplusplus/cpp-tutorial.html">C++ 教程</a>
+											</li>
+											<li>
+												<a title="Perl 教程" href="http://www.runoob.com/perl/perl-tutorial.html">Perl 教程</a>
+											</li>
+											<li>
+												<a title="Servlet 教程" href="http://www.runoob.com/servlet/servlet-tutorial.html">Servlet 教程</a>
+											</li>
+											<li>
+												<a title="JSP 教程" href="http://www.runoob.com/jsp/jsp-tutorial.html">JSP 教程</a>
+											</li>
+											<li>
+												<a title="Lua 教程" href="http://www.runoob.com/lua/lua-tutorial.html">Lua 教程</a>
+											</li>
+											<li>
+												<a title="Scala 教程" href="http://www.runoob.com/scala/scala-tutorial.html">Scala 教程</a>
+											</li>
+											<li>
+												<a title="Go 教程" href="http://www.runoob.com/go/go-tutorial.html">Go 教程</a>
+											</li>
+											<li>
+												<a title="设计模式" href="http://www.runoob.com/design-pattern/design-pattern-tutorial.html">设计模式</a>
+											</li>
+											<li>
+												<a title="正则表达式" href="http://www.runoob.com/regexp/regexp-tutorial.html">正则表达式</a>
+											</li>
+											<li>
+												<a title="ASP 教程" href="http://www.runoob.com/asp/asp-tutorial.html">ASP 教程</a>
+											</li>
+											<li>
+												<a title="AppML 教程" href="http://www.runoob.com/appml/appml-tutorial.html">AppML 教程</a>
+											</li>
+											<li>
+												<a title="VBScript 教程" href="http://www.runoob.com/vbscript/vbscript-tutorial.html">VBScript 教程</a>
+											</li>
+										</ul>
+									</li>
+									<li style="margin: 0;">
+										<a href="javascript:void(0);" class="tit">数据库</a>
+										<ul>
+											<li>
+												<a title="SQL 教程" href="http://www.runoob.com/sql/sql-tutorial.html">SQL 教程</a>
+											</li>
+											<li>
+												<a title="Mysql 教程" href="http://www.runoob.com/mysql/mysql-tutorial.html">Mysql 教程</a>
+											</li>
+											<li>
+												<a title="SQLite 教程" href="http://www.runoob.com/sqlite/sqlite-tutorial.html">SQLite 教程</a>
+											</li>
+											<li>
+												<a title="MongoDB 教程" href="http://www.runoob.com/mongodb/mongodb-tutorial.html">MongoDB 教程</a>
+											</li>
+											<li>
+												<a title="Redis 教程" href="http://www.runoob.com/redis/redis-tutorial.html">Redis 教程</a>
+											</li>
+											<li>
+												<a title="Memcached 教程" href="http://www.runoob.com/Memcached/Memcached-tutorial.html">Memcached 教程</a>
+											</li>
+										</ul>
+									</li>
+									<li style="margin: 0;">
+										<a href="javascript:void(0);" class="tit">移动端</a>
+										<ul>
+											<li>
+												<a title="Android 教程" href="http://www.runoob.com/w3cnote/android-tutorial-intro.html">Android 教程</a>
+											</li>
+											<li>
+												<a title="Swift 教程" href="http://www.runoob.com/swift/swift-tutorial.html">Swift 教程</a>
+											</li>
+											<li>
+												<a title="jQuery Mobile 教程" href="http://www.runoob.com/jquerymobile/jquerymobile-tutorial.html">jQuery Mobile 教程</a>
+											</li>
+											<li>
+												<a title="ionic 教程" href="http://www.runoob.com/ionic/ionic-tutorial.html">ionic 教程</a>
+											</li>
+										</ul>
+									</li>
+									<li style="margin: 0;">
+										<a href="javascript:void(0);" class="tit">XML 教程</a>
+										<ul>
+											<li>
+												<a title="XML 教程" href="http://www.runoob.com/xml/xml-tutorial.html">XML 教程</a>
+											</li>
+											<li>
+												<a title="DTD 教程" href="http://www.runoob.com/dtd/dtd-tutorial.html">DTD 教程</a>
+											</li>
+											<li>
+												<a title="XML DOM 教程" href="http://www.runoob.com/dom/dom-tutorial.html">XML DOM 教程</a>
+											</li>
+											<li>
+												<a title="XSLT 教程" href="http://www.runoob.com/xsl/xsl-tutorial.html">XSLT 教程</a>
+											</li>
+											<li>
+												<a title="XPath 教程" href="http://www.runoob.com/xpath/xpath-tutorial.html">XPath 教程</a>
+											</li>
+											<li>
+												<a title="XQuery 教程" href="http://www.runoob.com/xquery/xquery-tutorial.html">XQuery 教程</a>
+											</li>
+											<li>
+												<a title="XLink 教程" href="http://www.runoob.com/xlink/xlink-tutorial.html">XLink 教程</a>
+											</li>
+											<li>
+												<a title="XPointer 教程" href="http://www.runoob.com/xlink/xlink-tutorial.html">XPointer 教程</a>
+											</li>
+											<li>
+												<a title="XML Schema 教程" href="http://www.runoob.com/schema/schema-tutorial.html">XML Schema 教程</a>
+											</li>
+											<li>
+												<a title="XSL-FO 教程" href="http://www.runoob.com/xslfo/xslfo-tutorial.html">XSL-FO 教程</a>
+											</li>
+											<li>
+												<a title="SVG 教程" href="http://www.runoob.com/svg/svg-tutorial.html">SVG 教程</a>
+											</li>
+										</ul>
+									</li>
+									<li style="margin: 0;">
+										<a href="javascript:void(0);" class="tit">ASP.NET</a>
+										<ul>
+											<li>
+												<a title="ASP.NET 教程" href="http://www.runoob.com/aspnet/aspnet-tutorial.html">ASP.NET 教程</a>
+											</li>
+											<li>
+												<a title="C# 教程" href="http://www.runoob.com/csharp/csharp-tutorial.html">C# 教程</a>
+											</li>
+											<li>
+												<a title="Web Pages 教程" href="http://www.runoob.com/aspnet/webpages-intro.html">Web Pages 教程</a>
+											</li>
+											<li>
+												<a title="Razor 教程" href="http://www.runoob.com/aspnet/razor-intro.html">Razor 教程</a>
+											</li>
+											<li>
+												<a title="MVC 教程" href="http://www.runoob.com/aspnet/mvc-intro.html">MVC 教程</a>
+											</li>
+											<li>
+												<a title="Web Forms 教程" href="http://www.runoob.com/aspnet/aspnet-intro.html">Web Forms 教程</a>
+											</li>
+										</ul>
+									</li>
+									<li style="margin: 0;">
+										<a href="javascript:void(0);" class="tit">Web Services</a>
+										<ul>
+											<li>
+												<a title="Web Services 教程" href="http://www.runoob.com/webservices/webservices-tutorial.html">Web Services 教程</a>
+											</li>
+											<li>
+												<a title="WSDL 教程" href="http://www.runoob.com/wsdl/wsdl-tutorial.html">WSDL 教程</a>
+											</li>
+											<li>
+												<a title="SOAP 教程" href="http://www.runoob.com/soap/soap-tutorial.html">SOAP 教程</a>
+											</li>
+											<li>
+												<a title="RSS 教程" href="http://www.runoob.com/rss/rss-tutorial.html">RSS 教程</a>
+											</li>
+											<li>
+												<a title="RDF 教程" href="http://www.runoob.com/rdf/rdf-tutorial.html">RDF 教程</a>
+											</li>
+										</ul>
+									</li>
+									<li style="margin: 0;">
+										<a href="javascript:void(0);" class="tit">开发工具</a>
+										<ul>
+											<li>
+												<a title="Eclipse 教程" href="http://www.runoob.com/eclipse/eclipse-tutorial.html">Eclipse 教程</a>
+											</li>
+											<li>
+												<a title="Git 教程" href="http://www.runoob.com/git/git-tutorial.html">Git 教程</a>
+											</li>
+											<li>
+												<a title="Firebug 教程" href="http://www.runoob.com/firebug/firebug-tutorial.html">Firebug 教程</a>
+											</li>
+										</ul>
+									</li>
+									<li style="margin: 0;">
+										<a href="javascript:void(0);" class="tit">网站建设</a>
+										<ul>
+											<li>
+												<a title="HTTP 教程" href="http://www.runoob.com/http/http-tutorial.html">HTTP 教程</a>
+											</li>
+											<li>
+												<a title="网站建设指南" href="http://www.runoob.com/web/web-buildingprimer.html">网站建设指南</a>
+											</li>
+											<li>
+												<a title="浏览器信息" href="http://www.runoob.com/browsers/browser-information.html">浏览器信息</a>
+											</li>
+											<li>
+												<a title="网站主机教程" href="http://www.runoob.com/hosting/hosting-tutorial.html">网站主机教程</a>
+											</li>
+											<li>
+												<a title="TCP/IP 教程" href="http://www.runoob.com/tcpip/tcpip-tutorial.html">TCP/IP 教程</a>
+											</li>
+											<li>
+												<a title="W3C 教程" href="http://www.runoob.com/w3c/w3c-tutorial.html">W3C 教程</a>
+											</li>
+											<li>
+												<a title="网站品质" href="http://www.runoob.com/quality/quality-tutorial.html">网站品质</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+					<br>
+
+					<div class="sidebar-box ad-box ad-box-large">
+						<div class="sidebar-box advertise-here">
+							<a href="javascript:void(0);">Advertisement</a>
+						</div>
+						<div class="ad-600160">
+							<script async="" src="./AngularJS 教程 _ 菜鸟教程_files/adsbygoogle.js.下载"></script>
+							<!-- 侧栏1 -->
+							<ins class="adsbygoogle" style="display:inline-block;width:160px;height:600px" data-ad-client="ca-pub-5751451760833794" data-ad-slot="4106274865" data-adsbygoogle-status="done"><ins id="aswift_1_expand" style="display:inline-table;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:160px;background-color:transparent"><ins id="aswift_1_anchor" style="display:block;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:160px;background-color:transparent"><iframe width="160" height="600" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;" src="./AngularJS 教程 _ 菜鸟教程_files/saved_resource(1).html"></iframe></ins></ins>
+							</ins>
+							<script>
+								(adsbygoogle = window.adsbygoogle || []).push({});
+							</script>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<!-- 底部 -->
+
+		<div id="footer" class="mar-t50">
+			<div class="w3cschoolcc-block">
+				<div class="w3cschoolcc cf">
+					<dl>
+						<dt>
+       在线实例
+      </dt>
+						<dd>
+							·
+							<a href="http://www.runoob.com/html/html-examples.html">HTML 实例</a>
+						</dd>
+						<dd>
+							·
+							<a href="http://www.runoob.com/css/css-examples.html">CSS 实例</a>
+						</dd>
+						<dd>
+							·
+							<a href="http://www.runoob.com/js/js-examples.html">JavaScript 实例</a>
+						</dd>
+						<dd>
+							·
+							<a href="http://www.runoob.com/ajx/ajax-examples.html">Ajax 实例</a>
+						</dd>
+						<dd>
+							·
+							<a href="http://www.runoob.com/jquery/jquery-examples.html">jQuery 实例</a>
+						</dd>
+						<dd>
+							·
+							<a href="http://www.runoob.com/xml/xml-examples.html">XML 实例</a>
+						</dd>
+						<dd>
+							·
+							<a href="http://www.runoob.com/java/java-examples.html">Java 实例</a>
+						</dd>
+
+					</dl>
+					<dl>
+						<dt>
+      字符集&amp;工具
+      </dt>
+						<dd>
+							·
+							<a href="http://www.runoob.com/charsets/html-charsets.html">HTML 字符集设置</a>
+						</dd>
+						<dd>
+							·
+							<a href="http://www.runoob.com/tags/html-ascii.html">HTML ASCII 字符集</a>
+						</dd>
+						<dd>
+							·
+							<a href="http://www.runoob.com/tags/ref-entities.html">HTML ISO-8859-1</a>
+						</dd>
+						<dd>
+							·
+							<a href="http://www.runoob.com/tags/ref-symbols.html">HTML 实体符号</a>
+						</dd>
+						<dd>
+							·
+							<a href="http://www.runoob.com/tags/html-colorpicker.html">HTML 拾色器</a>
+						</dd>
+						<dd>
+							·
+							<a href="http://www.runoob.com/jsontool">JSON 格式化工具</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+       最新更新
+      </dt>
+						<dd>
+							·
+							<a href="http://www.runoob.com/cssref/css3-pr-text-emphasis.html" title="CSS3 text-emphasis 属性">CSS3 text-empha...</a>
+						</dd>
+						<dd>
+							·
+							<a href="http://www.runoob.com/w3cnote/vue2-start-coding.html" title="Vue2.0 新手入门 — 从环境搭建到发布">Vue2.0 新手入门...</a>
+						</dd>
+						<dd>
+							·
+							<a href="http://www.runoob.com/angularjs2/angularjs2-template-syntax.html" title="AngularJS2 模板语法">AngularJS2 模板...</a>
+						</dd>
+						<dd>
+							·
+							<a href="http://www.runoob.com/angularjs2/angularjs2-forms.html" title="AngularJS2 表单">AngularJS2 表单</a>
+						</dd>
+						<dd>
+							·
+							<a href="http://www.runoob.com/angularjs2/angularjs2-user-input.html" title="AngularJS2 用户输入">AngularJS2 用户...</a>
+						</dd>
+						<dd>
+							·
+							<a href="http://www.runoob.com/jquery/jquery-plugin-message.html" title="jQuery Message">jQuery Message</a>
+						</dd>
+						<dd>
+							·
+							<a href="http://www.runoob.com/angularjs2/angularjs2-displaying-data.html" title="AngularJS2 数据显示">AngularJS2 数据...</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+       站点信息
+      </dt>
+						<dd>
+							·
+							<a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&amp;email=ssbDyoOAgfLU3crf09venNHd3w" rel="external nofollow">意见反馈</a>
+						</dd>
+						<dd>
+							·
+							<a href="http://www.runoob.com/disclaimer">免责声明</a>
+						</dd>
+						<dd>
+							·
+							<a href="http://www.runoob.com/aboutus">关于我们</a>
+						</dd>
+						<dd>
+							·
+							<a href="http://www.runoob.com/archives">文章归档</a>
+						</dd>
+
+					</dl>
+					<div class="search-share">
+						<div class="app-download">
+							<div>
+								<strong>关注微信</strong>
+							</div>
+						</div>
+						<div class="share">
+							<img width="150" height="150" src="./AngularJS 教程 _ 菜鸟教程_files/qrcode.jpg">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="w-1000 copyright">
+				Copyright © 2013-2016 <strong><a href="http://www.runoob.com/" target="_blank">菜鸟教程</a></strong>&nbsp;
+				<strong><a href="http://www.runoob.com/" target="_blank">runoob.com</a></strong> All Rights Reserved. 备案号：闽ICP备15012807号-1
+			</div>
+		</div>
+		<div class="fixed-btn">
+			<a class="go-top" href="javascript:void(0)" title="返回顶部"> <i class="fa fa-angle-up"></i></a>
+			<a class="qrcode" href="javascript:void(0)" title="关注我们"><i class="fa fa-qrcode"></i></a>
+			<a class="writer" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&amp;email=ssbDyoOAgfLU3crf09venNHd3w" style="font-size: 12px;" title="Bug 反馈">反馈</a>
+			<!-- qrcode modal -->
+			<div id="bottom-qrcode" class="modal panel-modal hide fade in">
+				<h4>微信关注</h4>
+				<div class="panel-body"><img alt="微信关注" width="128" height="128" src="./AngularJS 教程 _ 菜鸟教程_files/qrcode(1).jpg"></div>
+			</div>
+		</div>
+		<div style="display:none;">
+			<script src="./AngularJS 教程 _ 菜鸟教程_files/stat.php" language="JavaScript"></script>
+			<script src="./AngularJS 教程 _ 菜鸟教程_files/core.php" charset="utf-8" type="text/javascript"></script>
+			<a href="http://www.cnzz.com/stat/website.php?web_id=5578006" target="_blank" title="站长统计">站长统计</a>
+			<script>
+				var _hmt = _hmt || [];
+				(function() {
+					var hm = document.createElement("script");
+					hm.src = "//hm.baidu.com/hm.js?8e2a116daf0104a78d601f40a45c75b4";
+					var s = document.getElementsByTagName("script")[0];
+					s.parentNode.insertBefore(hm, s);
+				})();
+			</script>
+		</div>
+		<script src="./AngularJS 教程 _ 菜鸟教程_files/main.js.下载"></script>
+
+		<script aria-hidden="true" type="application/x-lastpass" id="hiddenlpsubmitdiv" style="display: none;"></script>
+		<script>
+			try {
+				(function() {
+					for(var lastpass_iter = 0; lastpass_iter < document.forms.length; lastpass_iter++) {
+						var lastpass_f = document.forms[lastpass_iter];
+						if(typeof(lastpass_f.lpsubmitorig2) == "undefined") {
+							lastpass_f.lpsubmitorig2 = lastpass_f.submit;
+							if(typeof(lastpass_f.lpsubmitorig2) == 'object') {
+								continue;
+							}
+							lastpass_f.submit = function() {
+								var form = this;
+								var customEvent = document.createEvent("Event");
+								customEvent.initEvent("lpCustomEvent", true, true);
+								var d = document.getElementById("hiddenlpsubmitdiv");
+								if(d) {
+									for(var i = 0; i < document.forms.length; i++) {
+										if(document.forms[i] == form) {
+											if(typeof(d.innerText) != 'undefined') {
+												d.innerText = i.toString();
+											} else {
+												d.textContent = i.toString();
+											}
+										}
+									}
+									d.dispatchEvent(customEvent);
+								}
+								form.lpsubmitorig2();
+							}
+						}
+					}
+				})()
+			} catch(e) {}
+		</script>
+	</body>
+
+</html>
